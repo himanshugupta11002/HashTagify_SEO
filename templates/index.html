@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Image Processing App</h1>
+
+        <form id="uploadForm" action="/process" method="post" enctype="multipart/form-data">
+
+            <label for="image" class="custom-file-upload">
+                <span>Choose Images</span>
+                <input type="file" name="images" id="images" accept="image/*" multiple required>
+            </label>
+            <button type="submit" class="upload-btn">Process</button>
+        </form>
+
+        <!-- Image preview container -->
+        <div id="image-preview" style="display: none;">
+            <h2>Selected Image(s) Preview</h2>
+            <div id="preview-container" class="preview-container"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
