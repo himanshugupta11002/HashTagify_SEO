@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/HashTagify" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/models/captioning/vit-gpt2-image-captioning" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/models/detection/yolov5" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/transformers" vcs="Git" />

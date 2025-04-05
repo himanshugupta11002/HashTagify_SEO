@@ -1,4 +1,3 @@
-// static/js/app.js
 
 document.addEventListener("DOMContentLoaded", function () {
     const imagesInput = document.getElementById("images");
